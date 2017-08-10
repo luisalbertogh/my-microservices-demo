@@ -31,17 +31,7 @@ public class RiderController {
 	/** The rider DAO */
 	@Autowired
 	private RiderDAO riderDAO;
-	
-	/**
-	 * Go to home.
-	 *
-	 * @return
-	 */
-	@RequestMapping("/home")
-	public String home() {
-		return "Hi from Home";
-	}
-	
+		
 	/**
 	* Find all riders.
 	*
