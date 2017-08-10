@@ -33,13 +33,24 @@ public class RiderController {
 	private RiderDAO riderDAO;
 	
 	/**
+	 * Go to home.
+	 *
+	 * @return
+	 */
+	@RequestMapping("/home")
+	public String home() {
+		return "Hi from Home";
+	}
+	
+	/**
 	* Find all riders.
 	*
 	* @return The riders list.
 	*/
 	@RequestMapping("/riders")
 	public List<Rider> findAllRiders() {
-	  return (List<Rider>) this.getRiderDAO().findAll();
+	  List<Rider> riders = (List<Rider>) this.getRiderDAO().findAll();
+	  return riders;
 	}
 
 	/**

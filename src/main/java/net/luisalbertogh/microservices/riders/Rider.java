@@ -86,4 +86,12 @@ public final class Rider {
 	public void setVictories(int victories) {
 		this.victories = victories;
 	}
+	
+	/**
+	 * To string.
+	 */
+	@Override
+	public String toString(){
+		return "[" + this.name + " is " + this.nationality + " and belongs to " + this.team + " with " + this.victories + " victories]"; 
+	}	
 }

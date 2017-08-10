@@ -1,7 +1,7 @@
-# Spring properties
+# Spring Properties
 spring:
   application:
-     name: riders-service
+     name: client-app
 
 # Discovery Server Access
 #  1. Define URL of registration server (defaultZone)
@@ -15,4 +15,4 @@ eureka:
 
 # HTTP Server
 server:
-  port: 2222   # HTTP (Tomcat) port
+  port: 3333   # HTTP (Tomcat) port

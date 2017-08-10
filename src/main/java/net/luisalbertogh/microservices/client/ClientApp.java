@@ -35,7 +35,25 @@ public class ClientApp {
 		return new RestTemplate();
 	}
 	
-	
+	/**
+	 * The RiderService encapsulates the interaction with the micro-service.
+	 * 
+	 * @return A new service instance.
+	 */
+	@Bean
+	public RiderService riderService() {
+		return new RiderService(RIDERS_SERVICE_URL);
+	}
+
+	/**
+	 * Create the controller, passing it the {@link WebAccountsService} to use.
+	 * 
+	 * @return
+	 */
+	@Bean
+	public RiderController riderController() {
+		return new RiderController(riderService());
+	}
 	
 	/**
 	 * Run the application using Spring Boot and an embedded servlet engine.
