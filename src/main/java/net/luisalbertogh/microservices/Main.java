@@ -61,7 +61,7 @@ public class Main {
 	private static void usage() {
 		System.err.println("Usage: java -jar ... <server-name> [server-port]");
 		System.err.println(
-				"     where server-name is 'reg', 'registration', " + "'accounts' or 'web' and server-port > 1024");
+				"     where server-name is 'reg', 'registration', " + "'services' or 'client' and server-port > 1024");
 	}
 
 }
